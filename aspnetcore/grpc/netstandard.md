@@ -5,7 +5,6 @@ description: Learn how to use the .NET gRPC client in apps and libraries that su
 monikerRange: '>= aspnetcore-3.0'
 ms.author: jamesnk
 ms.date: 3/11/2021
-no-loc: [appsettings.json, "ASP.NET Core Identity", cookie, Cookie, Blazor, "Blazor Server", "Blazor WebAssembly", "Identity", "Let's Encrypt", Razor, SignalR]
 uid: grpc/netstandard
 ---
 # Use gRPC client with .NET Standard 2.0
@@ -58,7 +57,10 @@ builder.Services
         () => new GrpcWebHandler(new HttpClientHandler()));
 ```
 
-For more information, see [Configure gRPC-Web with the .NET gRPC client](xref:grpc/browser#configure-grpc-web-with-the-net-grpc-client).
+For more information, see [Configure gRPC-Web with the .NET gRPC client](xref:grpc/grpcweb#configure-grpc-web-with-the-net-grpc-client).
+
+> [!IMPORTANT]
+> gRPC-Web requires the client ***and*** server to support it. gRPC-Web can be [quickly configured by an ASP.NET Core gRPC server](xref:grpc/grpcweb#configure-grpc-web-in-aspnet-core). Other gRPC server implementations require a proxy to support gRPC-Web.
 
 ## .NET Framework
 
@@ -66,9 +68,12 @@ For more information, see [Configure gRPC-Web with the .NET gRPC client](xref:gr
 
 Requirements and restrictions to using `WinHttpHandler`:
 
-* Windows 10 Build 19622 or later.
-* A reference to the [System.Net.Http.WinHttpHandler](https://www.nuget.org/packages/System.Net.Http.WinHttpHandler/) NuGet package.
-* Only unary and server streaming gRPC calls are supported.
+* Windows 11 or later, Windows Server 2019 or later.
+  * gRPC client is fully supported on Windows 11 or later.
+  * gRPC client is partially supported on Windows Server 2019 and Windows Server 2022. Unary and server streaming methods are supported. Client and bidirectional streaming methods are **_not_** supported.
+* A reference to [`System.Net.Http.WinHttpHandler`](https://www.nuget.org/packages/System.Net.Http.WinHttpHandler/) version 6.0.1 or later.
+* Configure `WinHttpHandler` on the channel using `GrpcChannelOptions.HttpHandler`.
+* .NET Framework 4.6.1 or later.
 * Only gRPC calls over TLS are supported.
 
 ```csharp
@@ -81,14 +86,14 @@ var client = new Greeter.GreeterClient(channel);
 var response = await client.SayHelloAsync(new HelloRequest { Name = ".NET" });
 ```
 
-> [!NOTE]
-> .NET Framework support is in its early stages and requires using pre-release software.
-> * Windows 10 Build 19622 or later is available as a [Windows Insiders](https://insider.windows.com/) build.
-> * The required version of `System.Net.Http.WinHttpHandler` is not currently available on NuGet.org. The latest pre-release version is available on [this NuGet feed](https://pkgs.dev.azure.com/dnceng/public/_packaging/dotnet6/nuget/v3/index.json) should be used.
-
 ## gRPC C# core-library
 
-An alternative option for .NET Framework and Xamarin is to use [gRPC C# core-library](https://grpc.io/docs/languages/csharp/quickstart/) to make gRPC calls. It's a third party library that supports making gRPC calls over HTTP/2 on .NET Framework and Xamarin. gRPC C-core is not supported by Microsoft.
+An alternative option for .NET Framework and Xamarin has been to use [gRPC C# core-library](https://grpc.io/docs/languages/csharp/quickstart/) to make gRPC calls. gRPC C# core-library is:
+
+* A third party library that supports making gRPC calls over HTTP/2 on .NET Framework and Xamarin. 
+* Not supported by Microsoft.
+* In maintenance mode and will be [deprecated in favour of gRPC for .NET](https://grpc.io/blog/grpc-csharp-future/).
+* Not recommended for new apps.
 
 ## Additional resources
 

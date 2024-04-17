@@ -4,7 +4,6 @@ author: rick-anderson
 description: Discover articles based on ASP.NET Core projects created with individual user accounts.
 ms.author: riande
 ms.date: 12/11/2019
-no-loc: [appsettings.json, "ASP.NET Core Identity", cookie, Cookie, Blazor, "Blazor Server", "Blazor WebAssembly", "Identity", "Let's Encrypt", Razor, SignalR]
 uid: security/authentication/individual
 ---
 # Articles based on ASP.NET Core projects created with individual user accounts
@@ -13,23 +12,23 @@ ASP.NET Core Identity is included in project templates in Visual Studio with the
 
 The authentication templates are available in .NET Core CLI with `-au Individual`:
 
-::: moniker range=">= aspnetcore-2.1"
+:::moniker range=">= aspnetcore-2.1"
 
 ```dotnetcli
 dotnet new mvc -au Individual
 dotnet new webapp -au Individual
 ```
 
-::: moniker-end
+:::moniker-end
 
-::: moniker range="= aspnetcore-2.0"
+:::moniker range="= aspnetcore-2.0"
 
 ```dotnetcli
 dotnet new mvc -au Individual
 dotnet new razor -au Individual
 ```
 
-::: moniker-end
+:::moniker-end
 
 See [this GitHub issue](https://github.com/dotnet/AspNetCore/issues/5833) for web API authentication.
 
@@ -58,12 +57,12 @@ The following table shows the authentication options available for new web apps:
 
 | Option | Type of authentication | Link for more information |
  | ----------------- | ------------ | ---------- |
-| None            |  No authentication | | 
-| Individual      |  Individual authentication | <xref:security/authentication/identity>
-| IndividualB2C   |  Cloud-hosted individual authentication with Azure AD B2C | [Azure AD B2C](/azure/active-directory-b2c/) |
-| SingleOrg       |  Organizational authentication for a single tenant | [Azure AD](/azure/active-directory/develop/quickstart-v2-aspnet-core-webapp) |
-| MultiOrg        |  Organizational authentication for multiple tenants | [Azure AD](/azure/active-directory/develop/quickstart-v2-aspnet-core-webapp) |
-| Windows         |  Windows authentication | [Windows Authentication](xref:security/authentication/windowsauth)
+| None            |  No authentication. | | 
+| Individual      |  Individual authentication. | <xref:security/authentication/identity>
+| IndividualB2C   |  Cloud-hosted individual authentication with Azure AD B2C. | [Azure AD B2C](/azure/active-directory-b2c/) |
+| SingleOrg       |  Organizational authentication for a single tenant. Entra External ID tenants also use SingleOrg.| [Entra ID](/azure/active-directory/develop/quickstart-v2-aspnet-core-webapp) |
+| MultiOrg        |  Organizational authentication for multiple tenants. | [Entra ID](/azure/active-directory/develop/quickstart-v2-aspnet-core-webapp) |
+| Windows         |  Windows authentication. | [Windows Authentication](xref:security/authentication/windowsauth)
 
 ## Visual Studio new webapp authentication options
 
