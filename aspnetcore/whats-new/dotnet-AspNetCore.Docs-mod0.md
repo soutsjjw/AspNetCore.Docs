@@ -1,193 +1,90 @@
 ---
-title: "ASP.NET Core docs: What's new for December 2023"
-description: "What's new in the ASP.NET Core docs for December 2023."
-ms.custom: December-2023
-ms.date: 01/01/2024
+title: "ASP.NET Core docs: What's new for December 2024"
+description: "What's new in the ASP.NET Core docs for December 2024."
+ms.custom: December-2024
+ms.date: 01/01/2025
 ---
 
-# ASP.NET Core docs: What's new for December 2023
+# ASP.NET Core docs: What's new for December 2024
 
-Welcome to what's new in the ASP.NET Core docs for December 2023. This article lists some of the major changes to docs during this period.
-
-## Miscellaneous
-
-### Updated articles
-
-- <xref:index> - Update introduction-to-aspnet-core.md
+Welcome to what's new in the ASP.NET Core docs for December 2024. This article lists some of the major changes to docs during this period.
 
 ## Blazor
 
+### New articles
+
+- [ZZZ - Title not found in: #34189](blazor/security/webassembly/standalone-with-identity/qrcodes-for-authenticator-apps.md)
+
 ### Updated articles
 
-- <xref:blazor/fundamentals/signalr>
-  - Highlight placeholder line
-  - Snippet cross-links 8.0 (2)
-  - Terminology consistency updates
-- <xref:blazor/forms/validation>
-  - Fix casing of "isValid" in form code examples
-  - Snippet cross-links 8.0 (2)
-- <xref:blazor/test> - Cross-link bUnit Oslo '22
-- <xref:blazor/security/webassembly/graph-api>
-  - Remove duplicate words
-  - Razor directive ordering
-- <xref:blazor/blazor-ef-core>
-  - Update examples
-  - Snippet cross-links 8.0 (3)
-- <xref:blazor/components/event-handling>
-  - Update examples
-  - Snippet cross-links 8.0 (2)
-  - Snippet cross-links 8.0
-- <xref:blazor/components/index>
-  - Update examples
-  - Snippet cross-links 8.0 (3)
-  - Snippet cross-links 8.0 (2)
-  - Snippet cross-links 8.0
-  - Sample snippet updates
-  - Razor directive ordering
-- <xref:blazor/fundamentals/index>
-  - Snippet cross-links 8.0 (4)
-  - Snippet cross-links 8.0 (2)
-  - Terminology consistency updates
-- <xref:blazor/js-interop/call-dotnet-from-javascript> - Snippet cross-links 8.0 (4)
-- <xref:blazor/js-interop/call-javascript-from-dotnet>
-  - Snippet cross-links 8.0 (4)
-  - Snippet cross-links 8.0 (3)
-  - Snippet cross-links 8.0 (2)
-- <xref:blazor/call-web-api>
-  - Snippet cross-links 8.0 (3)
-  - Code snippet updates
-  - Terminology consistency updates
-- <xref:blazor/file-downloads>
-  - Snippet cross-links 8.0 (3)
-  - Snippet cross-links 8.0 (2)
-- <xref:blazor/file-uploads>
-  - Snippet cross-links 8.0 (3)
-  - Snippet cross-links 8.0 (2)
-- <xref:blazor/fundamentals/configuration> - Snippet cross-links 8.0 (3)
-- <xref:blazor/fundamentals/dependency-injection>
-  - Snippet cross-links 8.0 (3)
-  - Code snippet updates
-- <xref:blazor/fundamentals/handle-errors>
-  - Snippet cross-links 8.0 (3)
-  - Apply 'data-nosnippet' to error UI
-- <xref:blazor/fundamentals/logging> - Snippet cross-links 8.0 (3)
-- <xref:blazor/fundamentals/routing>
-  - Snippet cross-links 8.0 (3)
-  - Code snippet updates
-  - Terminology consistency updates
-  - Improve AdditionalAssemblies coverage
-- <xref:blazor/host-and-deploy/server> - Snippet cross-links 8.0 (3)
-- <xref:blazor/components/prerender>
-  - State persistence w/enhanced nav
-  - Snippet cross-links 8.0 (2)
-- <xref:blazor/components/cascading-values-and-parameters>
-  - Snippet cross-links 8.0 (2)
-  - Snippet cross-links 8.0
-  - Sample snippet updates
-  - Terminology consistency updates
-- <xref:blazor/components/data-binding>
-  - Snippet cross-links 8.0 (2)
-  - Snippet cross-links 8.0
-- <xref:blazor/components/dynamiccomponent>
-  - Snippet cross-links 8.0 (2)
-  - Snippet cross-links 8.0
-- <xref:blazor/components/key>
-  - Snippet cross-links 8.0 (2)
-  - Snippet cross-links 8.0
-  - Sample snippet updates
-- <xref:blazor/components/integration>
-  - Snippet cross-links 8.0 (2)
-  - Terminology consistency updates
-- <xref:blazor/components/layouts>
-  - Snippet cross-links 8.0 (2)
-  - Snippet cross-links 8.0
-  - Sample snippet updates
-- <xref:blazor/components/lifecycle>
-  - Snippet cross-links 8.0 (2)
-  - Snippet cross-links 8.0
-- <xref:blazor/components/overwriting-parameters>
-  - Snippet cross-links 8.0 (2)
-  - Snippet cross-links 8.0
-- <xref:blazor/components/quickgrid> - Snippet cross-links 8.0 (2)
-- <xref:blazor/components/rendering>
-  - Snippet cross-links 8.0 (2)
-  - Snippet cross-links 8.0
-- <xref:blazor/components/sections> - Snippet cross-links 8.0 (2)
-- <xref:blazor/components/templated-components>
-  - Snippet cross-links 8.0 (2)
-  - Snippet cross-links 8.0
-- <xref:blazor/components/virtualization> - Snippet cross-links 8.0 (2)
-- <xref:blazor/forms/binding> - Snippet cross-links 8.0 (2)
-- <xref:blazor/forms/index>
-  - Snippet cross-links 8.0 (2)
-  - Terminology consistency updates
-- <xref:blazor/forms/input-components> - Snippet cross-links 8.0 (2)
-- <xref:blazor/fundamentals/startup> - Snippet cross-links 8.0 (2)
+- <xref:blazor/components/quickgrid>
+  - QuickGrid scaffolding dB context remarks
+  - Blazor movie tutorial QuickGrid styling
+- <xref:blazor/components/data-binding> - Improve binding guidance
+- <xref:blazor/fundamentals/environments> - Improve Blazor environment guidance
+- <xref:blazor/file-uploads> - Blazor 9.0 updates
+- <xref:blazor/forms/binding> - Form name attribute coverage
+- <xref:blazor/fundamentals/index> - Update sample download instructions
 - <xref:blazor/globalization-localization>
-  - Snippet cross-links 8.0 (2)
-  - Terminology consistency updates
-- <xref:blazor/js-interop/index> - Snippet cross-links 8.0 (2)
-- <xref:blazor/state-management> - Snippet cross-links 8.0 (2)
-- <xref:blazor/components/control-head-content> - Snippet cross-links 8.0
-- <xref:blazor/components/generic-type-support> - Snippet cross-links 8.0
-- <xref:blazor/components/attribute-splatting> - Snippet cross-links 8.0
-- <xref:blazor/components/sync-context> - Snippet cross-links 8.0
-- <xref:blazor/project-structure>
-  - Preliminary cross-link work
-  - Terminology consistency updates
-- <xref:blazor/hybrid/routing> - MAUI deep linking guidance
-- <xref:blazor/security/webassembly/standalone-with-identity> - Token authentication updates
-- <xref:blazor/webassembly-lazy-load-assemblies> - Razor directive ordering
-- <xref:blazor/components/render-modes> - Terminology consistency updates
-- <xref:blazor/host-and-deploy/webassembly> - Terminology consistency updates
-- <xref:blazor/js-interop/ssr> - Terminology consistency updates
-- <xref:blazor/tooling> - Terminology consistency updates
+  - Blazor glob/loc aritcle updates
+  - Add remark on designer file namespace conflict
+- <xref:blazor/js-interop/index> - MutationObserver and DOM element removal
+- <xref:blazor/js-interop/ssr> - Add Blazor enhanced nav events
+- <xref:blazor/performance>
+  - [Blazor] Performance - Parameter values bundling vs. change detection
+  - [Blazor] Performance - Change detection - set parameters only
+- <xref:blazor/fundamentals/routing> - Update note on the NotFound param
+- <xref:blazor/fundamentals/signalr> - Start Blazor circuit with custom URL
+- <xref:blazor/state-management>
+  - [Blazor] state-management.md - isConnected vs. isLoaded
+  - State preservation (common provider) updates
+- <xref:blazor/components/lifecycle> - Prerendering waits for quiescence
+- <xref:blazor/components/index> - `IHttpContextAccessor`/`HttpContext` updates
+- <xref:blazor/host-and-deploy/index> - Placeholder line updates
+- <xref:blazor/js-interop/javascript-location> - Update script tag location guidance
+- <xref:blazor/webassembly-lazy-load-assemblies> - [Blazor] Lazy loading - Complete example - Prevent repeated loads
+- <xref:blazor/hybrid/reuse-razor-components> - Blazor 9.0 updates
+- <xref:blazor/security/blazor-web-app-oidc>
+  - Signed-out callback path coverage
+  - Improve the redirect on logout section
+  - Add CookieOidcRefresher section
+- <xref:blazor/hybrid/class-libraries> - Blazor 9.0 updates
+- [ZZZ - Title not found in: #34385#34370](blazor/security/blazor-web-app-with-entra.md)
+  - Signed-out callback path coverage
+  - Improve the redirect on logout section
+- [ZZZ - Title not found in: #34336](blazor/security/additional-scenarios.md) - Update the passing tokens section
+- [ZZZ - Title not found in: #34227](blazor/tutorials/movie-database-app/part-8.md) - Blazor movie tutorial QuickGrid styling
+- [ZZZ - Title not found in: #34202](blazor/security/interactive-server-side-rendering.md) - [Blazor] Security - interactive-server-side-rendering - script tags
+- [ZZZ - Title not found in: #34189](blazor/security/qrcodes-for-authenticator-apps.md) - 2FA/TOTP coverage for WASM+Identity
+- [ZZZ - Title not found in: #34189](blazor/security/webassembly/standalone-with-identity/account-confirmation-and-password-recovery.md) - 2FA/TOTP coverage for WASM+Identity
 
-## gRPC
+## Fundamentals
 
 ### Updated articles
 
-- <xref:grpc/grpcweb> - gRPC-Web Samples Update
+- <xref:fundamentals/startup> - Add Blazor to the list of app types
+- <xref:fundamentals/middleware/index> - Add section on middleware by app type
+- <xref:fundamentals/native-aot-tutorial> - Update .NET 9 Preview to .NET 9
+- <xref:fundamentals/use-httpcontext> - Add Blazor to lists of app types
+- [ZZZ - Title not found in: #34320](fundamentals/openapi/aspnetcore-openapi.md) - Add AOT /1
 
 ## Hosting and deployment
 
 ### Updated articles
 
-- <xref:host-and-deploy/azure-apps/index> - Preliminary cross-link work
+- <xref:host-and-deploy/linux-nginx> - Fix instructions for setting up Nginx
 
-## Migration
+## Performance
 
 ### Updated articles
 
-- <xref:migration/70-to-80>
-  - Update Blazor migration guidance
-  - Improve AdditionalAssemblies coverage
+- [ZZZ - Title not found in: #34224](performance/caching/hybrid.md) - Add important notes on HybridCache limitations and behavior
 
 ## Security
 
 ### Updated articles
 
-- <xref:security/authentication/scaffold-identity> - Blazor scaffold Identity remarks
-- <xref:security/authentication/identity/spa> - Document `MapIdentityApi<TUser>` endpoints
+- <xref:security/authorization/secure-data> - Update secure-data.md
+- <xref:security/cross-site-scripting> - Updates to XSS article
+- [ZZZ - Title not found in: #34385](security/authentication/configure-oidc-web-authentication.md) - Signed-out callback path coverage
 
-## Tutorials
-
-### Updated articles
-
-- <xref:tutorials/web-api-javascript> - Web API with JavaScript: Move to version by include
-- <xref:tutorials/choose-web-ui> - ChooseWebUI versioning by include
-- <xref:tutorials/first-web-api> - First Web API: Remove preview specific packages
-
-## Community contributors
-
-The following people contributed to the ASP.NET Core docs during this period. Thank you! Learn how to contribute by following the links under "Get involved" in the [what's new landing page](index.yml).
-
-- [bftelman](https://github.com/bftelman) - Telman Babayev ![1 pull requests.](https://img.shields.io/badge/Merged%20Pull%20Requests-1-green)
-- [bosusites](https://github.com/bosusites) -  ![1 pull requests.](https://img.shields.io/badge/Merged%20Pull%20Requests-1-green)
-- [hassanyahya400](https://github.com/hassanyahya400) - Hassan Yahya ![1 pull requests.](https://img.shields.io/badge/Merged%20Pull%20Requests-1-green)
-- [LarsK78](https://github.com/LarsK78) - LK_78 ![1 pull requests.](https://img.shields.io/badge/Merged%20Pull%20Requests-1-green)
-- [markharwood101](https://github.com/markharwood101) - Mark Harwood ![1 pull requests.](https://img.shields.io/badge/Merged%20Pull%20Requests-1-green)
-- [QueryCoordinator](https://github.com/QueryCoordinator) -  ![1 pull requests.](https://img.shields.io/badge/Merged%20Pull%20Requests-1-green)
-- [tg2648](https://github.com/tg2648) -  ![1 pull requests.](https://img.shields.io/badge/Merged%20Pull%20Requests-1-green)
-- [unnatRevo](https://github.com/unnatRevo) - Unnat Pandya ![1 pull requests.](https://img.shields.io/badge/Merged%20Pull%20Requests-1-green)
-- [Varorbc](https://github.com/Varorbc) - Varorbc ![1 pull requests.](https://img.shields.io/badge/Merged%20Pull%20Requests-1-green)
